@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accion = opcionesSelect.value;
   const error = errorTextarea.value;
   const token = localStorage.getItem('token');
-const errorFinal = "Error en el módulo de " + modulo + "\n" +
+ const errorFinal = reporte + " en el módulo de " + modulo + "\n" +
                    "Realizando la siguiente acción: " + accion + "\n" +
                    "Detalle del error: " + error;
 
