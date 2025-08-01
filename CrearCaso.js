@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
    const modulo = moduloSelect.value;
   const accion = opcionesSelect.value;
   const error = errorTextarea.value;
+ const reporte = reporteSelect.value;
   const token = localStorage.getItem('token');
  const errorFinal = reporte + " en el módulo de " + modulo + "\n" +
                    "Realizando la siguiente acción: " + accion + "\n" +
