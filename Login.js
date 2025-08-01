@@ -55,7 +55,7 @@ document.querySelector('#submit').addEventListener('click', async function (e) {
   const password = document.querySelector('#password').value;
 
   try {
-    const response = await fetch('https://gestordecasos-edd6a5bma9dha5bv.canadacentral-01.azurewebsites.net/api/Usuarios/Login', {
+    const response = await fetch('https://gestordecasos-edd6a5bma9dha5bv.canadacentral-01.azurewebsites.net/api/Usuarios/Login/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -65,7 +65,6 @@ document.querySelector('#submit').addEventListener('click', async function (e) {
         password: password
       })
     });
-
     if (!response.ok) {
       alert('Usuario o contraseña incorrectos');
       return;
