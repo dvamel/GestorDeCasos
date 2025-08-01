@@ -53,7 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const accion = opcionesSelect.value;
   const error = errorTextarea.value;
   const token = localStorage.getItem('token');
-const errorFinal = "Error en el modulo de " + modulo + "Realizando la siguiene acción "+  accion + "Detalle del error " + error
+const errorFinal = "Error en el módulo de " + modulo + "\n" +
+                   "Realizando la siguiente acción: " + accion + "\n" +
+                   "Detalle del error: " + error;
+
   if (!token) {
     alert("No estás autenticado. Por favor inicia sesión.");
     window.location.href = "https://dvamel.github.io/GestorDeCasos/index.html";
